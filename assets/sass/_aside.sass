@@ -1,0 +1,60 @@
+.aside
+  width: 33%
+
+.widget
+  padding: 20px 15px
+  font-size: 13px
+  background-color: #fff
+  margin-bottom: 30px
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, .05)
+  &-title
+    font-family: 'Playfair Display', serif
+    font-size: 18px
+    padding: 10px
+    margin-bottom: 20px
+    letter-spacing: 1px
+    text-align: center
+    border: 2px solid #F8B763
+    box-shadow: 3px 3px 0 0 #f8b763
+  .list-item
+    border-bottom: 1px solid #EBEBE3
+    padding: 10px 0
+    color: #c6c6c6
+    span
+      font-style: italic
+      margin-left: 10px
+  &:first-child
+    .list-item
+      &:last-child
+        border-bottom: none
+      &::before
+        content: ">"
+        display: inline-block
+        margin-right: 10px
+        color: #c6c6c6
+  .img-wrapper, .text-wrapper
+    width: 30%
+    margin-right: 15px
+    display: inline-block
+    font-family: 'Playfair Display', serif
+    vertical-align: top
+    color: #373737
+    letter-spacing: 1px
+    img
+      width: 100%
+  &-input
+    box-sizing: border-box
+    width: 100%
+    border: 2px solid #EBEBE3
+    padding: 0 0 0 10px
+    height: 40px
+    position: relative
+    outline: none
+    color: #9E9C9C
+    font-style: italic
+  &-form
+    &::after
+      content: url("../img/send.svg")
+      position: relative
+      left: 85%
+      bottom: 33px    

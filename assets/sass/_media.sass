@@ -1,0 +1,135 @@
+@media screen and ( max-width:767px )
+  .container
+    &-articles
+      flex-direction: column
+  .articles
+    width: 100%
+  .aside
+    width: 100%
+  .widget
+    &-form::after
+      left: 93%
+    &-list
+      .text-wrapper
+        font-size: 20px
+  .header
+    &-nav
+      transition: .5s all
+      position: absolute
+      left: 0
+      right: 0
+      top: 55px
+      height: 0
+      overflow: hidden
+      flex-flow: column nowrap
+      background: #FFF
+      &-active
+        height: 125px
+      &-elem
+        margin: 0
+        width: 100%
+        text-align: center
+        border-top: 1px solid #EBEBE3
+        &:last-child
+          box-shadow: 0px 4px 5px 0px rgba(34, 60, 80, 0.2)
+    &-search
+      margin-right: 30px
+    &-burger
+      display: block
+      position: relative
+      width: 26px
+      bottom: 1px
+      height: 12px
+      right: 10px
+      transform: rotate(0deg)
+      transition: .3s ease-in-out
+      span
+        display: block
+        position: absolute
+        height: 3px
+        width: 100%
+        background-color: #000
+        transition: .3s all
+        left: 0
+        border-radius: 5px
+        &:nth-child(1)
+          position: absolute
+          top: 0px
+        &:nth-child(2)
+          position: absolute
+          top: 6px
+        &:nth-child(3)
+          position: absolute
+          top: 6px
+        &:nth-child(4)
+          position: absolute
+          top: 12px
+      &-active
+        span
+          &:nth-child(1), &:nth-child(4)
+            top: 6px
+            width: 0%
+            left: 50%
+          &:nth-child(2)
+            transform: rotate(45deg)
+          &:nth-child(3)
+            transform: rotate(-45deg)
+
+@media screen and ( max-width:500px )
+  .header
+    padding: 10px
+    .container
+      padding: 0
+    &-search
+      padding-left: 0
+      margin-left: 0
+      &-input
+        font-size: 12px
+        max-width: 100px
+      &-btn
+        padding: 0
+        width: 20px
+    &-logo
+      &-letter
+        width: 25px
+        height: 25px
+        line-height: 25px
+  .widget
+    &-form::after
+      left: 90%
+  .footer
+    .container
+      &-footer
+        justify-content: space-between
+        padding: 0px 10px 10px 10px
+        flex-flow: column wrap
+    &-block
+      margin-top: 10px
+
+@media screen and ( max-width:400px )
+  .header
+    &-logo
+      align-self: center
+      margin-bottom: 10px
+    &-search
+      margin: 0 0 0 10px
+    &-nav
+      top: 85px
+    &-burger
+      position: absolute
+      bottom: 15px
+      right: 5%
+  .container
+    &-header
+      flex-flow: column
+      align-items: flex-start
+    &-articles
+      margin-top: 120px
+  .articles
+    .article
+      &-footer
+        &-link
+          line-height: 30px
+          padding: 0 10px
+          &::after
+            border-width: 15px 18px
