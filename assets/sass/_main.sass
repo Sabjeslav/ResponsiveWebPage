@@ -37,8 +37,14 @@
         padding: 0 22px
         background: #3C3D41
         letter-spacing: 0.1em
-        z-index: -1
+        cursor: pointer
+        transition: .3s background-color
+        &:hover
+          background-color: #5c5c5c
+          &::after
+            border-left-color: #5c5c5c
         &::after
+          transition: .3s all
           content: ''
           display: block
           position: absolute
